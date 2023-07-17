@@ -9,20 +9,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:ital,wght@1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./src/index.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     </head>
     <body>
         <h1>Lista de tarefas</h1>
-
-        <form>
-            <label for="tarefa">Nova Tarefa:</label>
-            <input type="text" id="tarefa" name="tarefa">
-            <button type="button" onclick="adicionarTarefa()">Adicionar +</button>
-        </form>
-
-        <h3>Tarefas:</h3>
-        <ul id="listaTarefas"></ul>
-        <script src="./index.js"></script>
+        <header>
+            <form>
+                <label for="tarefa">Nova Tarefa:</label>
+                <input type="text" id="tarefa" name="tarefa">
+                <button type="button" onclick="adicionarTarefa()">Adicionar +</button>
+            </form>
+        </header>
+            <h3>Tarefas:</h3>
+            <ul id="listaTarefas"></ul>
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+            <script src="./index.js"></script>
     </body>
 </html>
