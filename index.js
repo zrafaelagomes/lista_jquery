@@ -7,5 +7,8 @@ if (tarefa !== "") {
     li.appendChild(document.createTextNode(tarefa));
     lista.appendChild(li);
     document.getElementById("tarefa").value = "";
+    $('ul').on('click','li',function(){
+        alert($(this).text());
+    })
 }
 }
