@@ -1,5 +1,12 @@
+const button = document.querySelector("#button");
+
+button.addEventListener("click", function () {
+    adicionarTarefa();
+})
+
 function adicionarTarefa() {
-    var tarefa = document.getElementById("tarefa").value;
+    var tarefa = $("#tarefa").val();
+
     var lista = document.getElementById("listaTarefas");
 
 if (tarefa !== "") {
@@ -7,8 +14,8 @@ if (tarefa !== "") {
     li.appendChild(document.createTextNode(tarefa));
     lista.appendChild(li);
     document.getElementById("tarefa").value = "";
-    $('ul').on('click','li',function(){
-        alert($(this).text());
-    })
+    $('li').on('click', function () {
+        $(li).addClass("risco")
+    });
 }
 }
