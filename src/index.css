@@ -38,6 +38,7 @@ form h2 {
 label {
     display: block;
     margin-bottom: 5px;
+    transition: all ease .5s;
 }
 
 input[type="text"] {
