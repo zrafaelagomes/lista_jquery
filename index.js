@@ -29,7 +29,7 @@ function adicionarTarefa() {
         lista.appendChild(li);
         document.getElementById("tarefa").value = "";
         $('li').on('click', function () {
-            $(li).addClass("risco")
+            $(this).addClass("risco")
         });
 }
 }
